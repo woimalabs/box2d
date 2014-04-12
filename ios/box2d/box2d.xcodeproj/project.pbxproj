@@ -184,7 +184,6 @@
 		FB7216201885A1CD00D0B811 /* box2dTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "box2dTests-Info.plist"; sourceTree = "<group>"; };
 		FB7216221885A1CD00D0B811 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB7216241885A1CD00D0B811 /* box2dTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = box2dTests.m; sourceTree = "<group>"; };
-		FB7216C71885A8B800D0B811 /* box2d-2.2.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "box2d-2.2.1"; path = "../../box2d-2.2.1"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,7 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				FB64DC1318BA2A65004139EA /* src */,
-				FB7216C71885A8B800D0B811 /* box2d-2.2.1 */,
 				FB72160A1885A1CD00D0B811 /* box2d */,
 				FB72161E1885A1CD00D0B811 /* box2dTests */,
 				FB7216071885A1CD00D0B811 /* Frameworks */,
@@ -661,6 +659,7 @@
 		FB7216291885A1CD00D0B811 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/box2d.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "box2d/box2d-Prefix.pch";
@@ -679,6 +678,7 @@
 		FB72162A1885A1CD00D0B811 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/box2d.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "box2d/box2d-Prefix.pch";
