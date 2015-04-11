@@ -53,23 +53,7 @@
 		FB64DC9F18BA2B2C004139EA /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB64DC9318BA2B2C004139EA /* b2WheelJoint.cpp */; };
 		FB64DCA318BA2B48004139EA /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB64DCA118BA2B48004139EA /* b2Rope.cpp */; };
 		FB7216091885A1CD00D0B811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7216081885A1CD00D0B811 /* Foundation.framework */; };
-		FB7216171885A1CD00D0B811 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7216161885A1CD00D0B811 /* XCTest.framework */; };
-		FB7216181885A1CD00D0B811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7216081885A1CD00D0B811 /* Foundation.framework */; };
-		FB72161A1885A1CD00D0B811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7216191885A1CD00D0B811 /* UIKit.framework */; };
-		FB72161D1885A1CD00D0B811 /* libbox2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7216051885A1CD00D0B811 /* libbox2d.a */; };
-		FB7216231885A1CD00D0B811 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB7216211885A1CD00D0B811 /* InfoPlist.strings */; };
-		FB7216251885A1CD00D0B811 /* box2dTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7216241885A1CD00D0B811 /* box2dTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FB72161B1885A1CD00D0B811 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB7215FD1885A1CD00D0B811 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB7216041885A1CD00D0B811;
-			remoteInfo = box2d;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FB7216031885A1CD00D0B811 /* CopyFiles */ = {
@@ -178,7 +162,6 @@
 		FB7216051885A1CD00D0B811 /* libbox2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbox2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7216081885A1CD00D0B811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB72160C1885A1CD00D0B811 /* box2d-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "box2d-Prefix.pch"; sourceTree = "<group>"; };
-		FB7216151885A1CD00D0B811 /* box2dTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = box2dTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7216161885A1CD00D0B811 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FB7216191885A1CD00D0B811 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FB7216201885A1CD00D0B811 /* box2dTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "box2dTests-Info.plist"; sourceTree = "<group>"; };
@@ -192,17 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7216091885A1CD00D0B811 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB7216121885A1CD00D0B811 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB7216171885A1CD00D0B811 /* XCTest.framework in Frameworks */,
-				FB72161A1885A1CD00D0B811 /* UIKit.framework in Frameworks */,
-				FB7216181885A1CD00D0B811 /* Foundation.framework in Frameworks */,
-				FB72161D1885A1CD00D0B811 /* libbox2d.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +350,6 @@
 			isa = PBXGroup;
 			children = (
 				FB7216051885A1CD00D0B811 /* libbox2d.a */,
-				FB7216151885A1CD00D0B811 /* box2dTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -447,24 +418,6 @@
 			productReference = FB7216051885A1CD00D0B811 /* libbox2d.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		FB7216141885A1CD00D0B811 /* box2dTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB72162B1885A1CD00D0B811 /* Build configuration list for PBXNativeTarget "box2dTests" */;
-			buildPhases = (
-				FB7216111885A1CD00D0B811 /* Sources */,
-				FB7216121885A1CD00D0B811 /* Frameworks */,
-				FB7216131885A1CD00D0B811 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB72161C1885A1CD00D0B811 /* PBXTargetDependency */,
-			);
-			name = box2dTests;
-			productName = box2dTests;
-			productReference = FB7216151885A1CD00D0B811 /* box2dTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -487,21 +440,9 @@
 			projectRoot = "";
 			targets = (
 				FB7216041885A1CD00D0B811 /* box2d */,
-				FB7216141885A1CD00D0B811 /* box2dTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		FB7216131885A1CD00D0B811 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB7216231885A1CD00D0B811 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB7216011885A1CD00D0B811 /* Sources */ = {
@@ -556,23 +497,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB7216111885A1CD00D0B811 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB7216251885A1CD00D0B811 /* box2dTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FB72161C1885A1CD00D0B811 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB7216041885A1CD00D0B811 /* box2d */;
-			targetProxy = FB72161B1885A1CD00D0B811 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB7216211885A1CD00D0B811 /* InfoPlist.strings */ = {
@@ -672,6 +597,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Debug;
 		};
@@ -691,44 +617,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FB72162C1885A1CD00D0B811 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "box2d/box2d-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "box2dTests/box2dTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FB72162D1885A1CD00D0B811 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "box2d/box2d-Prefix.pch";
-				INFOPLIST_FILE = "box2dTests/box2dTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Release;
 		};
@@ -749,15 +638,6 @@
 			buildConfigurations = (
 				FB7216291885A1CD00D0B811 /* Debug */,
 				FB72162A1885A1CD00D0B811 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB72162B1885A1CD00D0B811 /* Build configuration list for PBXNativeTarget "box2dTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB72162C1885A1CD00D0B811 /* Debug */,
-				FB72162D1885A1CD00D0B811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
