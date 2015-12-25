@@ -586,6 +586,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/box2d.dst;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "box2d/box2d-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -597,7 +598,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 arm64";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -606,6 +607,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/box2d.dst;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "box2d/box2d-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -617,7 +619,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 arm64";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
